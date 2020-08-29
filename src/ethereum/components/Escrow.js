@@ -18,8 +18,8 @@ export default function Escrow(props) {
         // In case we want to store flow address on ethereum escrow contract too
         //const response = await writeContracts['Creature']["safeTransferFrom(address,address,uint256,bytes)"](props.address, ESCROW, new ethers.utils.BigNumber(props.selectedNftId.toString()), "OPTIONAL")
 
-        const response = await props.writeContracts['Creature'].safeTransferFrom(props.address, ESCROW,new ethers.utils.BigNumber(props.selectedNftId.toString()) );
-        console.log("NFT Transfer done to escrow:", response);
+        //const response = await props.writeContracts['Creature'].safeTransferFrom(props.address, ESCROW,new ethers.utils.BigNumber(props.selectedNftId.toString()) );
+        //console.log("NFT Transfer done to escrow:", response);
         props.setSentToEscrow(true);
 
       }else{

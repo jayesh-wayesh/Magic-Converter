@@ -5,7 +5,7 @@ import * as fcl from "@onflow/fcl"
 fcl.config()
         .put("accessNode.api", "https://access-testnet.onflow.org")                                  // connect to Flow testnet
         .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")                  // use Blocto testnet wall
-        .put("PRIVATE_KEY", process.env.PRIVATE_KEY)
+        .put("PRIVATE_KEY", process.env.REACT_APP_PRIVATE_KEY)
 
 
 // Local Deployment

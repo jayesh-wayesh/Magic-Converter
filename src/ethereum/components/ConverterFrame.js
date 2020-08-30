@@ -49,7 +49,9 @@ export default function ConverterFrame(props){
         </div>
       )
 
-    }else if( props.flowAddress ){
+    }else if( props.flowAddress && props.sentToEscrow  ){
+
+      // NOTE: (props.flowAddress && props.sentToEscrow) because blocto stores the flow address in localStorage
 
       // setp - 5, connected to flow, asked to convert NFT
       temp.push(

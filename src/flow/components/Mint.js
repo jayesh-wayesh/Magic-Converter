@@ -6,7 +6,7 @@ import '../../App.css'
 import loader from '../../assets/loader.svg'
 
 
-const CREATURE_CONTRACT_ADDRESS = '0xb701d39c688efd5b' /**  or  localStorage.getItem("CREATURE_CONTRACT_ADDRESS")  for LOCAL DEPLOYMENT **/ 
+const CREATURE_CONTRACT_ADDRESS = '0xb701d39c688efd5b' /**  or  localStorage.getItem("CREATURE_CONTRACT_ADDRESS")  for LOCAL DEPLOYMENT **/
 
 
 
@@ -45,7 +45,7 @@ export default function Mint(props){
 
     return (
       <div>
-       {(props.flowAddress) && (!props.flowId) &&
+       {(props.flowAddress) && (props.sentToEscrow) && (!props.flowId) &&
         <div className="convert">
         <div className="convert-txt">Now convert your NFT</div>
          {(!props.minting)

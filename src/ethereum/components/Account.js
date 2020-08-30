@@ -89,6 +89,7 @@ const logoutOfWeb3Modal = async ()=>{
   }, []);
 
 
+ // change account basically renders etherum address in ethereum address frame and it allows user to change address on clicking 'x'
   let changeAccount = []
   if( props.sentToEscrow ){
     changeAccount.push(

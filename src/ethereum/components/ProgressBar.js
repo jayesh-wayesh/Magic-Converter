@@ -39,20 +39,23 @@ export default function ProgressBar(props){
       }
       {(!props.sentToEscrow)
       ?
-        <div className="progress-circle" style={{ marginLeft: 220}}><span className="progress-text">3</span></div>
+        <>
+          <div className="progress-circle" style={{ marginLeft: 220}}><span className="progress-text">3</span></div>
+          <div className="progress-circle" style={{ marginLeft: 330}}><span className="progress-text">4</span></div>
+        </>
       :
         <>
          <div className="line" style={{ marginLeft: 110}}></div>
          <div className="progress-circle completed-circle" style={{ marginLeft: 220}}><span className="completed-text progress-text">3</span></div>
-        </>
-      }
-      {(!props.flowAddress)
-      ?
-        <div className="progress-circle" style={{ marginLeft: 330}}><span className="progress-text">4</span></div>
-      :
-        <>
-         <div className="line" style={{ marginLeft: 220}}></div>
-         <div className="progress-circle completed-circle" style={{ marginLeft: 330}}><span className="completed-text progress-text">4</span></div>
+         {(!props.flowAddress)
+         ?
+           <div className="progress-circle" style={{ marginLeft: 330}}><span className="progress-text">4</span></div>
+         :
+          <>
+           <div className="line" style={{ marginLeft: 220}}></div>
+           <div className="progress-circle completed-circle" style={{ marginLeft: 330}}><span className="completed-text progress-text">4</span></div>
+          </>
+         }
         </>
       }
       {(props.flowId) &&

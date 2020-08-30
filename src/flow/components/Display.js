@@ -52,6 +52,7 @@ export default function Display(props){
 
     const doItAgain = async () => {
       setTimeout(()=>{
+        localStorage.removeItem("CURRENT_USER")
         window.location.reload()
       },1)
     }

@@ -29,7 +29,7 @@ export default function App() {
         <Header/>
        {/**
           * For LOCAL DEPLOYMENT add
-          *  <DeployContract/> 
+          *  <DeployContract/>
           *
           */}
         <ConverterFrame
@@ -69,6 +69,7 @@ export default function App() {
           setMinted={setMinted}
           setMinting={setMinting}
           flowId={flowId}
+          sentToEscrow={sentToEscrow}
         />
         <Display
           flowAddress={flowAddress}

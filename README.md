@@ -7,11 +7,11 @@ Please check out live demo here.
 But you'll need a Creature NFT first to convert it to flow. Reach out to me on discord and I'll send you a cute NFT of your choice to convert it to Flow ;)
 
 **Ethereum** contracts are currently deployed on rinkeby
-* NFTescrow.sol [repo]() [view on etherscan](https://rinkeby.etherscan.io/address/0x556B0560205E62c3F690d86C775138d1f9911FA3#tokentxnsErc721)
-* Creature.sol  [repo]() [view on etherscan](https://rinkeby.etherscan.io/address/0x6e725769394A8821fCadD267a2DEf2e69acF666f)
+* NFTescrow.sol  :link:[repo](src/ethereum/rinkeby/contracts/Creature.sol)  :link:[view on etherscan](https://rinkeby.etherscan.io/address/0x556B0560205E62c3F690d86C775138d1f9911FA3#tokentxnsErc721)
+* Creature.sol   :link:[repo](src/ethereum/rinkeby/contracts/NFTescrow.sol)  :link:[view on etherscan](https://rinkeby.etherscan.io/address/0x6e725769394A8821fCadD267a2DEf2e69acF666f)
 
 **Flow** contract is deployed on flow devnet
-* Creature.cdc  [repo]() [view on devnet](https://view-source.surge.sh/testnet/account/0xb701d39c688efd5b)
+* Creature.cdc  :link:[repo](src/flow/contracts/Creature.cdc)  :link:[view on devnet](https://view-source.surge.sh/testnet/account/0xb701d39c688efd5b)
 
 
 
@@ -22,7 +22,7 @@ But you'll need a Creature NFT first to convert it to flow. Reach out to me on d
 - Generate keys using
   flow keys generate
 
-- Get your account approved & deploy [Creature contract](link) on flow devnet
+- Get your account approved & deploy [Creature contract](src/flow/contracts/Creature.cdc) on flow devnet
   ```
   Reach out to flow team and they'll approve your account and deploy your contract on your behalf and provide you with contract address
   ```

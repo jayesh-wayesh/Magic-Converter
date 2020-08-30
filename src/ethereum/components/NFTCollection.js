@@ -19,41 +19,31 @@ export default function NFTCollection(props) {
 
 
 
-  const selectNFTwithID = async ( id, position) => {
+  const selectNFTwithID = async (id) => {
 
     // if nft already selected
     if( props.nftSelected ){
 
       // deselect
       if(id === props.selectedNftId ){
-        await props.setNftPosition()
         await props.setNftSelected(false)
         await props.setSelectedNftId(null)
-
       }else{
-
         await props.setSelectedNftId(id)
-        await props.setNftPosition(position)
       }
-
     }else{
-
-      await props.setNftPosition(position)
       await props.setNftSelected(true)
       await props.setSelectedNftId(id)
     }
   }
 
-
    const ListCreatures = async () => {
 
      var temp = [];
-     var position = 0;
 
      for (var i = 1; i <= 12; i++) {
 
        const _id = i
-       const pos = position
        const name = "" + FIRST_NAMES[_id % FIRST_NAMES.length] + " " + LAST_NAMES[_id % LAST_NAMES.length]
 
        const res = await props.writeContracts['Creature'].ownerOf(new ethers.utils.BigNumber( _id.toString() ));
@@ -66,20 +56,18 @@ export default function NFTCollection(props) {
                 <>
                  <div className="nft-frame" id="nft-frame-highlighted"><img className="nft-pic" src ={"https://storage.googleapis.com/opensea-prod.appspot.com/creature/" + _id + ".png"}/></div>
                  <div className="nft-text" id="nft-text-highlighted">{name} #{_id}</div>
-                 <div className="nft-btn" id="nft-btn-highlighted" onClick={() => { selectNFTwithID(_id, pos ) }}><span className="nft-btn-txt">Select</span></div>
+                 <div className="nft-btn" id="nft-btn-highlighted" onClick={() => { selectNFTwithID(_id) }}><span className="nft-btn-txt">Select</span></div>
                 </>
                :
                 <>
                  <div className="nft-frame" id=""><img className="nft-pic" src ={"https://storage.googleapis.com/opensea-prod.appspot.com/creature/" + _id + ".png"}/></div>
                  <div className="nft-text" id="">{name} #{_id}</div>
-                 <div className="nft-btn" id="" onClick={() => { selectNFTwithID(_id, pos ) }}><span className="nft-btn-txt">Select</span></div>
+                 <div className="nft-btn" id="" onClick={() => { selectNFTwithID(_id) }}><span className="nft-btn-txt">Select</span></div>
                 </>
              }
 
            </div>
          );
-
-         position = position + 1;
        }
      }
 

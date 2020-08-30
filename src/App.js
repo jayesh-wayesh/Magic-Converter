@@ -13,7 +13,6 @@ export default function App() {
   const [ethAddress, setEthAddress] = useState()
   const [nftSelected, setNftSelected] = useState(false)
   const [selectedNftId, setSelectedNftId] = useState()
-  const [nftPosition, setNftPosition] = useState()
   const [sentToEscrow, setSentToEscrow] = useState(false)
   const [flowAddress, setFlowAddress] = useState()
   const [flowReceiver, setFlowReceiver] = useState(false)
@@ -81,8 +80,6 @@ export default function App() {
                setNftSelected={setNftSelected}
                selectedNftId={selectedNftId}
                setSelectedNftId={setSelectedNftId}
-               nftPosition={nftPosition}
-               setNftPosition={setNftPosition}
              />
           </div>
         }

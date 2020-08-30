@@ -6,7 +6,8 @@ import '../../App.css'
 import loader from '../../assets/loader.svg'
 
 
-const CREATURE_CONTRACT_ADDRESS = '0xb701d39c688efd5b'
+const CREATURE_CONTRACT_ADDRESS = '0xb701d39c688efd5b' /**  or  localStorage.getItem("CREATURE_CONTRACT_ADDRESS")  for LOCAL DEPLOYMENT **/ 
+
 
 
 const mintOnFlow = async (props) => {

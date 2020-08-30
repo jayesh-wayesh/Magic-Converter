@@ -3,6 +3,8 @@ import './App.css'
 import { useContractLoader } from './ethereum/hooks'
 import { Account, ProgressBar, NFTCollection, ConverterFrame, Escrow, Header, SideBarsTopBar } from './ethereum/components'
 import { Config, FlowAccount, Mint, Display} from './flow/components'
+//import { DeployContract } from './ethereum/components'      // For LOCAL DEPLOYMENT
+
 
 
 export default function App() {
@@ -25,6 +27,11 @@ export default function App() {
   return (
       <div>
         <Header/>
+       {/**
+          * For LOCAL DEPLOYMENT add
+          *  <DeployContract/> 
+          *
+          */}
         <ConverterFrame
           ethAddress={ethAddress}
           nftSelected={nftSelected}

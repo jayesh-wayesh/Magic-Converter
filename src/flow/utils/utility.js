@@ -3,7 +3,8 @@ import displayNFTs from "../contracts/displayNFTs.cdc"
 import * as fcl from "@onflow/fcl"
 import * as sdk from "@onflow/sdk"
 
-const CREATURE_CONTRACT_ADDRESS = '0xb701d39c688efd5b'
+const CREATURE_CONTRACT_ADDRESS = '0xb701d39c688efd5b' /**  or  localStorage.getItem("CREATURE_CONTRACT_ADDRESS")  for LOCAL DEPLOYMENT **/
+
 
 
 

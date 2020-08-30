@@ -9,6 +9,9 @@ export default function NFTCollection(props) {
 
   const [myCollection, setMyCollection] = useState([])
 
+
+
+
   useEffect(() => {
     if(props.address){
        ListCreatures()
@@ -16,6 +19,7 @@ export default function NFTCollection(props) {
        setMyCollection([])
     }
   },[props.address, props.selectedNftId ])
+
 
 
 
@@ -36,6 +40,9 @@ export default function NFTCollection(props) {
       await props.setSelectedNftId(id)
     }
   }
+
+
+
 
    const ListCreatures = async () => {
 

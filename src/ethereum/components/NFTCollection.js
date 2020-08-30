@@ -63,7 +63,7 @@ export default function NFTCollection(props) {
                 <>
                  <div className="nft-frame" id="nft-frame-highlighted"><img className="nft-pic" src ={"https://storage.googleapis.com/opensea-prod.appspot.com/creature/" + _id + ".png"}/></div>
                  <div className="nft-text" id="nft-text-highlighted">{name} #{_id}</div>
-                 <div className="nft-btn" id="nft-btn-highlighted" onClick={() => { selectNFTwithID(_id) }}><span className="nft-btn-txt">Select</span></div>
+                 <div className="nft-btn" id="nft-btn-clicked" onClick={() => { selectNFTwithID(_id) }}><span className="nft-btn-txt">Select</span></div>
                 </>
                :
                 <>

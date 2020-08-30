@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "@onflow/config": "^0.0.2",
-    "@onflow/fcl": "^0.0.46",
+    "@onflow/fcl": "^0.0.53",
     "@onflow/fcl-config": "^0.0.1",
-    "@onflow/sdk": "^0.0.30",
+    "@onflow/sdk": "^0.0.31",
     "@onflow/types": "^0.0.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

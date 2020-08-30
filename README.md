@@ -38,9 +38,7 @@ Flow contract is deployed on flow devnet
 ### Steps to start
 
 * Open terminal and provide env variable
-  ```export REACT_APP_PRIVATE_KEY=" ** PRIVATE KEY OF APPROVED ACCOUNT ** "
-  
-  ```
+
 
 * Downlaod modules and start frontend
   `yarn && yarn start`

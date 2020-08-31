@@ -6,6 +6,7 @@
    
    **NOTE:** you'll need a Creature NFT first to convert it to flow. Reach out to us on discord `@Jayesh_Wayesh#6931` and we'll send you a cute NFT of your choice to convert it to Flow :wink: 
 
+<br />
 
 ## How to run the demo on Flow testnet
 
@@ -27,7 +28,7 @@
     view on http://localhost:3000/
 
 
-
+<br />
 
 ## How to run the demo on Flow emulator
 
@@ -77,6 +78,7 @@
     export {default as DeployContract} from './DeployContract.js'
     ```
 
+<br />
 
 ### Installation
 
@@ -85,6 +87,8 @@
     ```
     yarn
     ```
+
+<br />
 
 
 ### Start 
@@ -106,6 +110,7 @@
     view on http://localhost:3000/
 
 
+<br />
 
 ## Contracts used in this demo
 
@@ -119,6 +124,7 @@
 *   **Flow NFT contract** - Creature.cdc 
     >   [view on github](./src/flow/contracts/Creature.cdc)                |    [view on flow devnet](https://view-source.surge.sh/testnet/account/0xb701d39c688efd5b)    
 
+<br />
 
 ## Acknowledgement
 

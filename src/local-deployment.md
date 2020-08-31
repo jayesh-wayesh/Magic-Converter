@@ -1,5 +1,21 @@
 
-## For local deployment 
+## Flow local deployment 
+
+
+
+### Table of Contents
+
+* [Prerequisites]()
+* [Update Code]()
+* [Installation]()
+
+
+
+### Prerequisites
+
+* [Flow CLI](https://docs.onflow.org/docs/cli)
+* [VS Code extension](https://docs.onflow.org/docs/visual-studio-code-extension)
+
 
 
 ### Update Code

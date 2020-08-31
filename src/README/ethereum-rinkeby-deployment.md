@@ -4,16 +4,16 @@
 * Clone it locally.
 * In Magic-Converter's repo jump to `src/etherum/rinkeby` and paste the files in this directory in scaffoldeth's `packages/buidler` such that buidler package looks like this - 
     ```
-    buidler
-    - ~~contracts~~
-    + rinkeby/contracts
-    + rinkeby/Files
-    + rinkeby/openzepelin-solidity
-    - scripts
-    - tests
-    .
-    .
-    . 
+    buidler                                        buidler
+    |                                              |
+    | contracts                                    |- contracts             (from rinkeby folder)                  
+    |- scripts                                     |- Files                 (from rinkeby folder)                  
+    |- tests                 ---->                 |- openzepelin-solidity  (from rinkeby folder)                  
+    |- scripts                                     .
+    |- tests                                       .
+    .                                              .
+    .                                              .
+    .                                              .
     ```
 * Follow the steps given in `scaffoldeth` to deploy it on rinkeby(or locally). 
 * After contracts are deployed, replace the `src/ethereum/contracts` in Magic-Converter's repo with scaffoldeth's `packages/react-app/src/contracts` 

@@ -48,7 +48,7 @@ export default function NFTCollection(props) {
 
      var temp = [];
 
-     for (var i = 1; i <= 24; i++) {
+     for (var i = 1; i <= 12; i++) {
 
        const _id = i
        const name = "" + FIRST_NAMES[_id % FIRST_NAMES.length] + " " + LAST_NAMES[_id % LAST_NAMES.length]

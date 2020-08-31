@@ -1,13 +1,9 @@
 # Magic-Converter
 
 
-## A Quick Summary
 
-
-## Link to live demo
+## Link to live demo [here](https://magic-converter.vercel.app/)
    
-   [here](https://magic-converter.vercel.app/)
-
    **NOTE:** you'll need a Creature NFT first to convert it to flow. Reach out to us on discord `@Jayesh_Wayesh#6931` and we'll send you a cute NFT of your choice to convert it to Flow :wink: 
 
 

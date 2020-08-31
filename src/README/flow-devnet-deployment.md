@@ -5,10 +5,9 @@
 
 ### Table of Contents
 
-* [Prerequisites]()
-* [Update Code]()
-* [Installation]()
-
+* [Prerequisites](./flow-devnet-deployment.md#Prerequisites)
+* [Update Code](./flow-devnet-deployment.md#Update-Code)
+* [Installation](./flow-devnet-deployment.md#Installation)
 
 
 ### Prerequisites

@@ -5,9 +5,9 @@
 
 ### Table of Contents
 
-* [Prerequisites]()
-* [Update Code]()
-* [Installation]()
+* [Prerequisites](./flow-local-deployment.md#Prerequisites)
+* [Update Code](./flow-local-deployment.md#Update-Code)
+* [Installation](./flow-local-deployment.md#Installation)
 
 
 

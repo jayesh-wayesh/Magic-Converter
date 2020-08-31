@@ -8,7 +8,7 @@
 * Youtube Link 
 * Live demo
 * [Getting Started](/src/README/getting-started.md)
-* [References]()
+* [References](./Magic-COnverter.git#References)
 
 **NOTE:** you'll need a Creature NFT first to convert it to flow. Reach out to us on discord `@Jayesh_Wayesh#6931` and we'll send you a cute NFT of your choice to convert it to Flow :wink: 
 

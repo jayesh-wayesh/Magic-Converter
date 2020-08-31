@@ -38,11 +38,12 @@
 *   [Flow CLI](https://docs.onflow.org/docs/cli)
 *   [VS Code extension](https://docs.onflow.org/docs/visual-studio-code-extension)
 
+<br />
 
 ### Update the following Code
 
 
-1. Goto `/App.js` 
+1. Go to `src/App.js` 
 
     1. Add line
         ```
@@ -51,10 +52,10 @@
 
     2. Comment out this code 
         ```
-            if( !localStorage.getItem('CREATURE_CONTRACT_ADDRESS') ){
+        if( !localStorage.getItem('CREATURE_CONTRACT_ADDRESS') ){
             localStorage.setItem('CREATURE_CONTRACT_ADDRESS', '0xb701d39c688efd5b') 
             console.log("Creature contract address on flow devnet saved :)")
-            }
+        }
         ```
 
     3. Add component 
@@ -64,7 +65,7 @@
         **This component will display a button on screen which will allow you to deploy Creature contract on flow emulator.**
 
 
-2.  Go to `/flow/components/Config.js` and add code 
+2.  Go to `src/flow/components/Config.js` and add code 
     ```
     fcl.config()
             .put("challenge.handshake", "http://localhost:8701/flow/authenticate")
@@ -73,7 +74,7 @@
     and comment out the other code being used for devent deployment
 
 
-3.  Go to `/flow/components/index.js` and add line
+3.  Go to `src/flow/components/index.js` and add line
     ```
     export {default as DeployContract} from './DeployContract.js'
     ```

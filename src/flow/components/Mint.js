@@ -6,26 +6,23 @@ import '../../App.css'
 import loader from '../../assets/loader.svg'
 
 
-const CREATURE_CONTRACT_ADDRESS = '0xb701d39c688efd5b' /**  or  localStorage.getItem("CREATURE_CONTRACT_ADDRESS")  for LOCAL DEPLOYMENT **/
-
-
 
 const mintOnFlow = async (props) => {
 
 
   console.log("Mint to address :", props.flowAddress)
   console.log("TokenID : ", props.selectedNftId)
-  console.log("Contract address : ", CREATURE_CONTRACT_ADDRESS)
+  console.log("Contract address : ", localStorage.getItem('CREATURE_CONTRACT_ADDRESS'))
   console.log("started minting....")
 
   const code = await generateCode(mintNFT, {
       query: /(0x01|0x02|TOKEN_ID)/g,
-      "0x01": CREATURE_CONTRACT_ADDRESS,
+      "0x01": localStorage.getItem('CREATURE_CONTRACT_ADDRESS'),
       "0x02": props.flowAddress,
       "TOKEN_ID": getEthereumID( props.selectedNftId ),
   });
 
-  const tx = await sendTransaction( CREATURE_CONTRACT_ADDRESS , code);
+  const tx = await sendTransaction( localStorage.getItem('CREATURE_CONTRACT_ADDRESS') , code);
   console.log("Minting token completed : ", { tx });
 
 };

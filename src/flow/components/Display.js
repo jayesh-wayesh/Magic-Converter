@@ -5,9 +5,6 @@ import { generateCode,getEthereumID } from '../utils/utility.js'
 import displayNFTs from '../contracts/displayNFTs.cdc'
 import '../../App.css'
 
-const CREATURE_CONTRACT_ADDRESS = '0xb701d39c688efd5b' /**  or  localStorage.getItem("CREATURE_CONTRACT_ADDRESS")  for LOCAL DEPLOYMENT **/
-
-
 
 
 export const getFlowId = async (props) => {
@@ -16,7 +13,7 @@ export const getFlowId = async (props) => {
 
     const code = await generateCode(displayNFTs, {
         query: /(0x01|0x02|TOKEN_ID)/g,
-        "0x01": CREATURE_CONTRACT_ADDRESS,
+        "0x01": localStorage.getItem('CREATURE_CONTRACT_ADDRESS'),
         "0x02": props.flowAddress,
         "TOKEN_ID": getEthereumID( props.selectedNftId ),
     });

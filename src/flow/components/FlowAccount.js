@@ -4,11 +4,13 @@ import setupUser from "../contracts/setupUser.cdc"
 import checkReceiver from "../contracts/checkReceiver.cdc"
 import { checkReceiverScript, setupUserTx, getUserAddress} from "../utils/utility.js"
 
+
+
 export const setupNFTReceiver = async () => {
 
     // check if receiver is set or not
     const response = await checkReceiverScript(checkReceiver)
-    console.log("NFT Receiver exits: ", response)
+    console.log("NFT Receiver exists: ", response)
 
     // if not set then request to set receiver
     if(response == false){
@@ -16,6 +18,8 @@ export const setupNFTReceiver = async () => {
         console.log("NFT Receiver setup :", receiverResponse)
     }
 }
+
+
 
 const setUserFlowAddress = async (props) =>{
 
@@ -26,9 +30,10 @@ const setUserFlowAddress = async (props) =>{
 
   // set flow address to
   const addr = await getUserAddress()
-  props.setFlowAddress(addr)
-  props.setFlowReceiver(true)
+  await props.setFlowAddress(addr)
+  await props.setFlowReceiver(true)
 }
+
 
 
 export default function FlowAccount(props){
@@ -53,7 +58,8 @@ export default function FlowAccount(props){
   if(userLoggedIn){
       setUserFlowAddress(props)
   }else{
-      props.setFlowAddress();
+      props.setFlowAddress()
+      props.setFlowReceiver(false)
   }
 
 

@@ -3,8 +3,10 @@
 
 Eth<->Flow Bridge that converts your etherum NFT to Flow.
 
-<div>Check out live demo [here]().</div>
-**NOTE:** you'll need a Creature NFT first to convert it to flow. Reach out to us on discord `@Jayesh_Wayesh#6931` and we'll send you a cute NFT of your choice to convert it to Flow :wink:
+Check out live demo [here]().
+
+**NOTE:** you'll need a Creature NFT first to convert it to flow. Reach out to us on discord `@Jayesh_Wayesh#6931` and we'll send you a cute NFT of your choice to convert it to Flow :wink: .
+
 
 **Ethereum** contracts are currently deployed on rinkeby
 * NFTescrow.sol  :link:[repo](src/ethereum/rinkeby/contracts/Creature.sol)  :link:[view on etherscan](https://rinkeby.etherscan.io/address/0x556B0560205E62c3F690d86C775138d1f9911FA3#tokentxnsErc721)

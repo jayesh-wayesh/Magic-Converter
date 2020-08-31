@@ -14,7 +14,7 @@ import CreatureCode from "../contracts/Creature.cdc"
 fcl
    .config()
    .put("SERVICE_ADDRESS",'f8d6e0586b0a20c7')
-   .put("PRIVATE_KEY", process.env.REACT_APP_PRIVATE_KEY)
+   .put("PRIVATE_KEY", '5e967c6c6370b4b243d107794f6096cc346415142eacb72ed64ccfee4e4ae8f5')  // from flow.json
 
 
 
@@ -59,7 +59,7 @@ export default function DeployContract(){
 
   return (
     <div>
-      <button style={{bottom:0, leftMargin:400}} onClick={deployContract}>Deploy Contract</button>
+      <button className="deploy-contract" onClick={deployContract}>Deploy Contract</button>
     </div>
   )
 }

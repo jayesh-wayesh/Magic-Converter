@@ -3,9 +3,6 @@ import displayNFTs from "../contracts/displayNFTs.cdc"
 import * as fcl from "@onflow/fcl"
 import * as sdk from "@onflow/sdk"
 
-const CREATURE_CONTRACT_ADDRESS = '0xb701d39c688efd5b' /**  or  localStorage.getItem("CREATURE_CONTRACT_ADDRESS")  for LOCAL DEPLOYMENT **/
-
-
 
 
 export const setupUserTx = async (setupUser) => {
@@ -16,7 +13,7 @@ export const setupUserTx = async (setupUser) => {
 
     const code = await generateCode(setupUser, {
       query: /(0x01|0x02)/g,
-      "0x01": CREATURE_CONTRACT_ADDRESS,
+      "0x01": localStorage.getItem('CREATURE_CONTRACT_ADDRESS'),
     });
 
     console.log("getting blocknumber")
@@ -49,7 +46,7 @@ export const checkReceiverScript = async ( checkReceiver) => {
 
     const code = await generateCode(checkReceiver, {
         query: /(0x01|0x02)/g,
-        "0x01": CREATURE_CONTRACT_ADDRESS,
+        "0x01": localStorage.getItem('CREATURE_CONTRACT_ADDRESS'),
         "0x02": address,
     });
 
@@ -70,7 +67,7 @@ export const render_NFTs = async () => {
 
   const code = await generateCode(displayNFTs, {
       query: /(0x01|0x02)/g,
-      "0x01": CREATURE_CONTRACT_ADDRESS,
+      "0x01": localStorage.getItem('CREATURE_CONTRACT_ADDRESS'),
       "0x02": address,
   });
 

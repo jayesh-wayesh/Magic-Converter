@@ -104,7 +104,7 @@
     yarn run dev:wallet
     ```
 
-*   Open a new terminal and add this command to start flow emulator
+*   Open a new terminal and start the app
     ```
     yarn start
     ```
